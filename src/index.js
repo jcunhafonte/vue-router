@@ -274,6 +274,6 @@ VueRouter.version = '__VERSION__'
 VueRouter.isNavigationFailure = isNavigationFailure
 VueRouter.NavigationFailureType = NavigationFailureType
 
-if (inBrowser && window.Vue) {
-  window.Vue.use(VueRouter)
-}
+// if (inBrowser && window.Vue) {
+//   window.Vue.use(VueRouter)
+// }

@@ -1885,6 +1885,7 @@ function runQueue (queue, fn, cb) {
   step(0);
 }
 
+// When changing thing, also edit router.d.ts
 const NavigationFailureType = {
   redirected: 2,
   aborted: 4,
@@ -3014,8 +3015,8 @@ VueRouter.version = '3.4.3';
 VueRouter.isNavigationFailure = isNavigationFailure;
 VueRouter.NavigationFailureType = NavigationFailureType;
 
-if (inBrowser && window.Vue) {
-  window.Vue.use(VueRouter);
-}
+// if (inBrowser && window.Vue) {
+//   window.Vue.use(VueRouter)
+// }
 
 export default VueRouter;

@@ -7,7 +7,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = global || self, global.VueRouter = factory());
-}(this, function () { 'use strict';
+}(this, (function () { 'use strict';
 
   /*  */
 
@@ -1912,6 +1912,7 @@
     step(0);
   }
 
+  // When changing thing, also edit router.d.ts
   var NavigationFailureType = {
     redirected: 2,
     aborted: 4,
@@ -3052,10 +3053,10 @@
   VueRouter.isNavigationFailure = isNavigationFailure;
   VueRouter.NavigationFailureType = NavigationFailureType;
 
-  if (inBrowser && window.Vue) {
-    window.Vue.use(VueRouter);
-  }
+  // if (inBrowser && window.Vue) {
+  //   window.Vue.use(VueRouter)
+  // }
 
   return VueRouter;
 
-}));
+})));
